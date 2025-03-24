@@ -6,7 +6,7 @@ spring:
     name: customer-service
 
   datasource:
-    url: jdbc:postgresql://${DATABASE_URL}  # Railway provides these vars
+    url: jdbc:${DATABASE_URL}  # Railway provides these vars
 
   jpa:
     hibernate:
