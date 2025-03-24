@@ -6,7 +6,7 @@ spring:
     name: customer-service
 
   datasource:
-    url: jdbc:${DATABASE_URL}  # Railway provides these vars
+    url: jdbc:${DATABASE_URL}/customerdb  # Railway provides these vars
 
   jpa:
     hibernate:
