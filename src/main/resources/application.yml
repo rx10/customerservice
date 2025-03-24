@@ -6,9 +6,7 @@ spring:
     name: customer-service
 
   datasource:
-    url: 9f3ef314-c474-4914-98f4-4dc49f175568.DATABASE_URL
-    username: postgres
-    password: test123
+    url: ${DATABASE_URL}
     driver-class-name: org.postgresql.Driver
 
   jpa:
