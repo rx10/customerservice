@@ -6,8 +6,9 @@ spring:
     name: customer-service
 
   datasource:
-    url: jdbc:${DATABASE_URL}/customerdb  # Railway provides these vars
-
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}?sslmode=disable
+    username: ${PGUSER}       # "postgres" (default in Railway)
+    password: ${PGPASSWORD}   # Railway auto-generates this
   jpa:
     hibernate:
       ddl-auto: update
