@@ -6,7 +6,7 @@ spring:
     name: customer-service
 
   datasource:
-    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}?sslmode=disable
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/railway?sslmode=disable
     username: ${PGUSER}       # "postgres" (default)
     password: ${PGPASSWORD}   # Railway auto-generates this
   jpa:
