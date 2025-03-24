@@ -6,8 +6,8 @@ spring:
     name: customer-service
 
   datasource:
-    url: jdbc:${DATABASE_URL}
-    username: ${PGUSER}       # "postgres" (default in Railway)
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}?sslmode=disable
+    username: ${PGUSER}       # "postgres" (default)
     password: ${PGPASSWORD}   # Railway auto-generates this
   jpa:
     hibernate:
