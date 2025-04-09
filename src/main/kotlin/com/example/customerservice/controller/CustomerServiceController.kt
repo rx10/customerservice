@@ -5,7 +5,7 @@ import com.example.customerservice.service.CustomerService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
-@CrossOrigin(origins = ["http://vercelfrontend-zeta.vercel.app"])
+@CrossOrigin(origins = ["https://vercelfrontend-zeta.vercel.app", "http://vercelfrontend-zeta.vercel.app"])
 @RestController
 @RequestMapping("/api/customers")
 class CustomerController(private val service: CustomerService) {
